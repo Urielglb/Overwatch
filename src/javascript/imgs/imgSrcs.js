@@ -6,11 +6,6 @@ function addSrcs() {
     imgs.forEach(img =>{
         img.src = names[i++]; 
     })
-    console.log(names);
 }
-
-/*names.forEach(name => {
-    console.log(name);
-});*/
 
 addSrcs();

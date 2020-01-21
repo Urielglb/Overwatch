@@ -10,7 +10,6 @@ const htmlWebpack = new HtmlWebpackPlugin({
 module.exports = {
     entry : './src/javascript/entry.js',
     output: {
-        publicPath: '/',
         path: path.resolve(path.join(__dirname,'..'),'dist'),
         filename: 'javascirpt/bundle.js',
     }, 
