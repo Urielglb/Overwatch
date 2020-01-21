@@ -8,7 +8,7 @@ const htmlWebpack = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-    entry : './assets/javascript/entry.js',
+    entry : './src/javascript/entry.js',
     output: {
         publicPath: '/',
         path: path.resolve(path.join(__dirname,'..'),'dist'),
@@ -18,8 +18,10 @@ module.exports = {
     module:{
         rules: [
             {
-                test:/\.jpg$/,
-                loader:'url-loader'
+                test : /\.(png|svg|jpg|gif)$/,
+                use : [
+                    'file-loader'
+                ]
             }
         ]
     }
